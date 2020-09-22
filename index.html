@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular Js login</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src=js/script.js></script>
+
+
+</head>
+<body ng-app="myApp" ng-controller="myController">
+    <h1>Google login</h1>
+    <input type="button" ng-click="ongooglelogin" value="Login" style="height: 60px; width: 100px;">
+    <h4>{{gmail.username}}</h4>
+    <h4>{{gmail.email}}</h4>
+
+    <img style="height: 100px; width: 100px;">
+    <script src="app.js"></script>
+    <script>
+        (function(){
+            var p=document.createElement('script');
+            p.async=true;
+            p.src="https://apis.google.com/js/client.js?onload=onLoadFunction";
+            var s =document.getElementByTagName('script')[0];
+            s.parentNode.insertBefore(p,s);
+        })();
+    </script>
+    
+</body>
+</html>
